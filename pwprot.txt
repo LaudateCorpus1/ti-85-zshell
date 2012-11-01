@@ -1,0 +1,101 @@
+ti-85-password-protect
+======================
+                      +-----------------------------------+       
+                      |       TI-85 Password Protect      |
+                      |  Chris Bowron / Digital Dreamland |
+                      +-----------------------------------+
+
++-----------+
+| Overview: |
++-----------+    
+    
+    This program allows the user to implement a password protection scheme
+for the Texas Instrument TI-85 graphing calculator.  The password can be 
+up to 8 characters long, uppercase alphabet only.
+
++--------+
+| Usage: |
++--------+
+    
+    To run the program press the custom menu key.  This should show Zshell as
+Custom Menu number 1.  Select it with the f1 key.  From the menu choose
+pwprot.  The program will prompt the user for a menu of changing passwords,
+shutting down, or quit.  
+    To change passwords select option 2, by hitting the 2 button.  
+The calculator will prompt you for the password, enter it bytyping it on 
+the calculator keys.  When you have completed the password hit enter.  The 
+calculator will then print the password you have entered and ask if it is 
+correct or not.  If it is correct select 1, and the calculatorwill display 
+password changed.  If you have have not entered the password correctly 
+choose option 2, and the calculator will display "Password Not Changed" 
+and return to the main menu.
+    To shut down and use the password protection feature choose option
+1 from the main menu.  The calculator will promptly turn itself off.  When
+the on key is pressed pwprot will prompt you to enter a password if it is
+correct the calculator will return to normal operating mode.  If it is 
+incorrect, the calculator will turn itself off again.
+
++---------------+
+| Requirements: |
++---------------+
+    
+    TI-85 Calculator with 1045 free bytes
+    Zshell 4.0
+
++-----------------+
+| Miscelleaneous: |
++-----------------+    
+    
+    PWProt was written in Z80 Assembly language and compiled using the
+Table Assembler Ver 3.0.1.  It was then converted to a TI-85 type string
+using string85.com program written by Dan Eble for use ZShell.
+    Some Assembly code from the Texanoid ver 1.00 program were used. 
+specifically, the input one character routine, and the letter table. This
+author is very appreciative of the distribution of that program by its
+author Magnus Hagander.
+    This program currently consumes too much power while in the 'off' mode
+and ways to avoid wasteful battery power lossage are being investigated.
+    full source code available upon request to ai150@detroit.freenet.org.
+
++----------+
+| Caution: |
++----------+
+
+    Do not forget your password, there is no backdoor.  If you do forget your 
+password after running the program, you must remove your batteries to shut
+off the calculator.  This will cause you to lose everything in memory.
+    I cannot be held responsible for any damage that may occur after using 
+my program, or any data that is lost.  etc, etc.  By using this program
+you agree to not hold the author responsible for any damage or data lossage 
+that may occur.  
+    Questions or comments can be directed to the author at:
+        ai150@detroit.freenet.org
+    
+    or posted to the bit.listserv.calc-ti mailing list or the Zshell mailing
+list, as I am regular reader of both.
+	Reminder:
+
+    The default password is 'BOO'.  (This is a nickname of mine).  You will
+need to know this to change passwords.
+
++----------+
+| Updates: |
++----------+
+Ver 1.24:
+
+	Added Current PW Check To Change Password
+
+
++---------+
+| Greets: |
++---------+
+
+    Dan Eble, 
+    Magnus Hagander, 
+    Rob Taylor          : For Zshell 4.0
+    Magnus Hagander     : Texanoid v 1.00 Source code
+    Dan Eble            : Text Files About TI Ports
+    Ethan Aubin         : Program Ideas
+    Myself              : For writing such groovy programs
+    All Users           : Thanks, Glad you're using it
+
